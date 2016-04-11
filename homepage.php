@@ -5,21 +5,8 @@
     <?PHP
 
     session_start();
-    $access_level = $_COOKIE['access_level_cookie'];
+    $access_level = $_SESSION['access_level'];
     $username = $_POST['user'];
-
-
-    $newhtml =
-        <<<NEWHTML
-
-
-
-<form>
-    <label for="user">Username: </label>
-    <input type="text" id="user" name="user" value = $username readonly />
-</form>
-
-NEWHTML;
 
     displayAccessLevelInformation($access_level);
 
