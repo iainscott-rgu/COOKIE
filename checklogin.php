@@ -2,6 +2,10 @@
 <head>
 <title>CHECK LOGIN PAGE</title>
 
+    <?php
+    $username = $_POST['user'];
+
+    ?>
 </head>
 <form action="homepage.php" method="post">
     <label for="user">Username: </label>
