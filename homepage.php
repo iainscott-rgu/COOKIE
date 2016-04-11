@@ -6,12 +6,14 @@
 
     session_start();
     $access_level = $_COOKIE['access_level_cookie'];
+    $username = $_POST['user'];
 
     displayAccessLevelInformation($access_level);
 
     function displayAccessLevelInformation($access_level) {
     if ($access_level == 'standarduser') {
     echo "<p>You are currently logged in as a standard user</p>";
+        echo '$username';
     }
     elseif ($access_level == "root") {
     echo "<p>You are currently logged in as a root user</p>";
