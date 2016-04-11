@@ -6,10 +6,10 @@
     $password = $_POST['password'];
 
     if($username == "Mike" && $password == '123456') {
-        setcookie('user', $username);
+        setcookie('user_cookie', $username);
         setcookie('access_level_cookie', 'standarduser');
     }
-    header('location: loggedin.php');
+    header('location: homepage.php');
     ?>
 
 </head>
