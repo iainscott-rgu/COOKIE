@@ -25,7 +25,7 @@ $newhtml =
 
 NEWHTML;
 
-
+print($newhtml);
 
 ?>
 
