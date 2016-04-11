@@ -6,7 +6,7 @@
 
     session_start();
     $access_level = $_SESSION['access_level'];
-    $username = $_POST['user'];
+    print $_SESSION['access_level'];
 
     displayAccessLevelInformation($access_level);
 
