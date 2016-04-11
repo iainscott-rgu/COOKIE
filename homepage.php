@@ -8,7 +8,18 @@
     $access_level = $_COOKIE['access_level_cookie'];
     $username = $_POST['user'];
 
-    echo $username;
+
+    $newhtml =
+        <<<NEWHTML
+
+
+
+<form>
+    <label for="user">Username: </label>
+    <input type="text" id="user" name="user" value = $username readonly />
+</form>
+
+NEWHTML;
 
     displayAccessLevelInformation($access_level);
 
