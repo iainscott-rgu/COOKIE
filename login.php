@@ -1,7 +1,21 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: 9540730
- * Date: 11/04/2016
- * Time: 09:31
- */
+<html>
+<head>
+    <title>LOGIN PAGE</title>
+</head>
+<header>
+
+</header>
+<body>
+
+<main>
+<form action="checklogin.php" method="post">
+    <label for="user">Username: </label>
+    <input type="text" id="user" name="user" required />
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password" required />
+</form>
+
+</main>
+</body>
+
+</html>
