@@ -10,10 +10,11 @@
 
     displayAccessLevelInformation($access_level);
 
+    echo $username;
+
     function displayAccessLevelInformation($access_level) {
     if ($access_level == 'standarduser') {
     echo "<p>You are currently logged in as a standard user</p>";
-        echo '$username';
     }
     elseif ($access_level == "root") {
     echo "<p>You are currently logged in as a root user</p>";
