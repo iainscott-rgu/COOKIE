@@ -7,7 +7,7 @@
 
     ?>
 </head>
-<form action="homepage.php" method="post">
+<form >
     <label for="user">Username: </label>
     <input type="text" id="user" name="user" readonly />
 </form>
