@@ -9,7 +9,7 @@
 </head>
 <form action="homepage.php" method="post">
     <label for="user">Username: </label>
-    <input type="text" id="user" name="user" readonly />
+    <input type="text" id="user" name="user" value=$username readonly />
 </form>
 
 <?php
