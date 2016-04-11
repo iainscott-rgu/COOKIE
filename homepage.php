@@ -8,9 +8,9 @@
     $access_level = $_COOKIE['access_level_cookie'];
     $username = $_POST['user'];
 
-    displayAccessLevelInformation($access_level);
-
     echo $username;
+
+    displayAccessLevelInformation($access_level);
 
     function displayAccessLevelInformation($access_level) {
     if ($access_level == 'standarduser') {
