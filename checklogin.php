@@ -27,6 +27,7 @@ NEWHTML;
 
 print($newhtml);
 
+header('location: homepage.php');
 ?>
 
 <header>
