@@ -13,6 +13,7 @@
     <input type="text" id="user" name="user" required />
     <label for="password">Password: </label>
     <input type="password" id="password" name="password" required />
+    <input type="submit" value="Submit">
 </form>
 
 </main>
