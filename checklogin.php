@@ -7,6 +7,12 @@
 $username = $_POST['user'];
 $password = $_POST['password'];
 
+if($username == "Mike" && $password == '123456') {
+    setcookie('user_cookie', $username);
+    setcookie('access_level_cookie', 'standarduser');
+}
+
+
 $newhtml =
     <<<NEWHTML
 
@@ -20,10 +26,6 @@ $newhtml =
 NEWHTML;
 
 
-if($username == "Mike" && $password == '123456') {
-    setcookie('user_cookie', $username);
-    setcookie('access_level_cookie', 'standarduser');
-}
 
 ?>
 
