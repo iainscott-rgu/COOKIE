@@ -10,7 +10,7 @@
 
     displayAccessLevelInformation($access_level);
 
-    echo '".$username."';
+    echo '.$username.';
 
     function displayAccessLevelInformation($access_level) {
     if ($access_level == 'standarduser') {
