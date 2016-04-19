@@ -4,24 +4,15 @@
 </head>
 
 <?php
+$username = $_POST['user'];
+$password = $_POST['password'];
 session_start();
-
+$_SESSION['user'] = $username;
+$_SESSION['password'] = $password;
 
 if(isset($_SESSION['user'])) {
-    setcookie('user_cookie');
-    setcookie('access_level', 'standarduser');
+    $access_level = "standarduser";
 }
-
-
-$newhtml =
-    <<<NEWHTML
-
-
-
-NEWHTML;
-
-print($newhtml);
-
 header('location: homepage.php');
 ?>
 
